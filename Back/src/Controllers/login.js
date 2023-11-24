@@ -10,7 +10,7 @@ module.exports = (req, res) => {
     // return res.status(401).json({access:'false',
     // message:'Usuario o contraseña incorrecta'})
 
-    user ? res.status(200).json({access:'true'}) 
-    : res.status(401).json({access:'false',
+    user ? res.status(200).json({access: true}) 
+    : res.status(401).json({access: false,
     message:'Usuario o contraseña incorrecta'})
 }

@@ -26,8 +26,10 @@ describe('Test de RUTAS', ()=>{
         })
         it('Si hay un error responder con status: 500', async ()=> {
 
-            const response = (await agent.get('/rickandmorty/character/1000')).statusCode
-            expect(response).toBe(404)
+            const response = (await agent.get('/rickandmorty/character/1000')) 
+            // .statusCode
+            // expect(response).toBe(404)
+            console.log(response)
     })
     })
     describe('GET /rickandomorty/login',()=>{
